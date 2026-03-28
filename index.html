@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Hailemariam Family</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+
+<!-- HERO SECTION -->
+ 
+<section class="hero">
+  <h1> Hailemariam's Family</h1>
+  <p>A Story of Love, Strength, and Faith</p>
+  
+
+
+<!-- Popup -->
+<div id="popup" class="popup" onclick="closeImage()">
+    <img id="popup-img">
+</div>
+<div class="family-gallery">
+    <a href="#img1">
+        <img src="img1.jpg" alt="Family 1">
+    </a>
+    <a href="#img2">
+        <img src="img2.png" alt="Family 2">
+    </a>
+    <a href="#img3">
+        <img src="img3.jpg" alt="Family 3">
+    </a>
+</div>
+
+<!-- Popups -->
+<div id="img1" class="popup">
+    <a href="#_" class="close">&times;</a>
+    <img src="img1.jpg" alt="Family 1">
+</div>
+
+<div id="img2" class="popup">
+    <a href="#_" class="close">&times;</a>
+    <img src="img2.png" alt="Family 2">
+</div>
+
+<div id="img3" class="popup">
+    <a href="#_" class="close">&times;</a>
+    <img src="img3.jpg" alt="Family 3">
+</div>
+
+<style>
+/* Circular thumbnails */
+.family-gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* makes it circle */
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.family-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Popup overlay */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+/* Show popup when targeted */
+.popup:target {
+    display: flex;
+}
+
+/* Close button */
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
+</section>
+
+
+<!-- FAMILY STORY -->
+<section class="story">
+  <h2>❤️ Our Family Story</h2>
+  <p>
+    Our family is built on love, strength, and faith. We are ten siblings,
+    united with deep respect and care for one another. Our parents, Abadit Meles and Hailemariam Gebrehwet, are our guiding heroes.
+  </p>
+</section>
+
+<!-- FAMILY MEMBERS GRID -->
+<section class="members">
+  <h2> 💕💕Family Members💕💕</h2>
+  <div class="grid">
+
+    <!-- Parent Cards -->
+    <a href="#father" class="card">
+      <img src="father.jpg" alt="Hailemariam Gebrehwet">
+      <h3>Hailemariam Gebrehwet💖</h3>
+      <p>Father</p>
+    </a>
+
+    <a href="#mother" class="card">
+      <img src="mother.jpg" alt="Abadit Meles">
+      <h3>Abadit Meles💖</h3>
+      <p>Mother</p>
+    </a>
+
+    <!-- Siblings -->
+    <a href="#kiros" class="card">
+      <img src="kiros.jpg" alt="Kiros Hailemariam">
+      <h3>Kiros Hailemariam💖</h3>
+      <p>Ethio Telecom manager</p>
+    </a>
+
+    <a href="#amit" class="card">
+      <img src="amit.jpg" alt="Dr. Amit Hailemariam">
+      <h3>Dr. Amit Hailemariam💖</h3>
+      <p>General Surgery Resident</p>
+    </a>
+
+    <a href="#tsegay" class="card">
+      <img src="tsegay.jpg" alt="Dr. Tsegay Hailemariam">
+      <h3>D/n Dr. Tsegay Hailemariam💖</h3>
+      <p>Radiology Resident</p>
+    </a>
+
+    <a href="#tslalom" class="card">
+      <img src="you.jpg" alt="Tslalom Hailemariam">
+      <h3>Tslalom Hailemariam💖</h3>
+      <p>IT Student</p>
+    </a>
+
+    <a href="#shushay" class="card">
+      <img src="shushay.jpg" alt="Shushay Hailemariam">
+      <h3>Shushay Hailemariam💖</h3>
+      <p>grade 12 student </p>
+    </a>
+    <a href="#novel" class="card">
+      <img src="novel.jpg" alt="Shushay Hailemariam">
+      <h3>Novel kiros💖</h3>
+      <p>our little angle </p>
+    </a>
+    <a href="#tadelesh" class="card">
+      <img src="tadelesh.jpg" alt="Tadelesh Abrha">
+      <h3>Tadelesh Abrha💖</h3>
+      <p>mother </p>
+    </a>
+
+    <a href="#tsega" class="card">
+      <img src="tsega.jpg" alt="Tsega Hailemariam">
+      <h3>Tsega Hailemariam💖</h3>
+      <p>CoTM Engineer</p>
+    </a>
+
+    <a href="#girmay" class="card">
+      <img src="girmay.jpg" alt="Girmay Hailemariam">
+      <h3>D/n Girmay Hailemariam💖</h3>
+      <p>Water Engineer </p>
+    </a>
+
+    <a href="#hiluf" class="card">
+      <img src="hiluf.jpg" alt="Hiluf Hailemariam">
+      <h3>Hiluf Hailemariam💖</h3>
+      <p> works in CBE </p>
+    </a>
+
+    <a href="#atsede" class="card">
+      <img src="atsede.jpg" alt="Atsede Hailemariam">
+      <h3>Atsede Hailemariam💖</h3>
+      <p>Trader</p>
+    </a>
+
+    <a href="#gezaei" class="card">
+      <img src="gezaei.jpg" alt="Gezaei Hailemariam">
+      <h3>Gezaei Hailemariam💖</h3>
+      <p>Goat & Sheep Trading</p>
+    </a>
+
+  </div>
+  <!-- ================== CHURCH SECTIONS WITH POPUPS ================== -->
+<section class="churches">
+  <h2>⛪ Our Churches & Faith</h2>
+
+  <div class="church-grid">
+
+    <!-- Saint Mikael Church -->
+    <a href="#popup-mikael" class="church-card">
+      <img src="saint_mikael.jpg" alt="Saint Mikael Church Wukro">
+      <div class="church-text">
+        <h3>Saint Mikael  mlahay zengi Church </h3>
+        <p>Click to see the full image and history</p>
+      </div>
+    </a>
+
+    <!-- Medhane Alem Adi Kesho Church -->
+    <a href="#popup-medhane" class="church-card">
+      <img src="medhaniale.jpg" alt="Medhane Alem Adi Kesho Church">
+      <div class="church-text">
+        <h3>Medhane Alem Adi Kesho Church</h3>
+        <p>Click to see the full image and history</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ================== CHURCH POPUPS ================== -->
+
+<div id="popup-mikael" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="saint_mikael.jpg" alt="Saint Mikael Church Wukro">
+    <div class="popup-text">
+      <h3>Saint Mikael Church (Wukro)</h3>
+      <p>
+        Saint Mikael Church is a historic rock-hewn church in Wukro. Carved centuries ago,
+        it has been a center of worship and pilgrimage for generations. 
+      </p>
+      <p>
+        This church represents God’s mercy and protection over our family.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="popup-medhane" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="medhaniale.jpg" alt="Medhane Alem Adi Kesho Church">
+    <div class="popup-text">
+      <h3>Medhane Alem Adi Kesho Church</h3>
+      <p>
+        Medhane Alem Adi Kesho is a rock-hewn church carved from solid rock, 
+        one of Tigray’s oldest and most remarkable churches.
+      </p>
+      <p>
+        It reminds our family of God’s grace, protection, and blessings.
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CSS POPUPS FOR EACH FAMILY MEMBER -->
+<div id="father" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="father.jpg" alt="Hailemariam Gebrehwet">
+    <div class="popup-text">
+      <h3>Hailemariam Gebrehwet</h3>
+      <p>The loving father and cornerstone of our family.</p>
+    </div>
+  </div>
+</div>
+
+<div id="mother" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="mother.jpg" alt="Abadit Meles">
+    <div class="popup-text">
+      <h3>Abadit Meles</h3>
+      <p>A resilient hero and kind mom. Everyone loves her.</p>
+    </div>
+  </div>
+</div>
+
+<div id="kiros" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="kiros.jpg" alt="Kiros Hailemariam">
+    <div class="popup-text">
+      <h3>Kiros Hailemariam</h3>
+      <p>Manager at Ethio Telecom and father of three.</p>
+    </div>
+  </div>
+</div>
+
+<div id="amit" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="amit.jpg" alt="Dr. Amit Hailemariam">
+    <div class="popup-text">
+      <h3>Dr. Amit Hailemariam</h3>
+      <p>General Surgery Resident, a strong and determined doctor.</p>
+    </div>
+  </div>
+</div>
+
+<div id="tsegay" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="tsegay.jpg" alt="Dr. Tsegay Hailemariam">
+    <div class="popup-text">
+      <h3>Dr. Tsegay Hailemariam</h3>
+      <p>Radiology Resident, dedicated and hardworking.</p>
+    </div>
+  </div>
+</div>
+
+<div id="tslalom" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="you.jpg" alt="Tslalom Hailemariam">
+    <div class="popup-text">
+      <h3>Tslalom Hailemariam</h3>
+      <p>A student with big dreams and determination to succeed.</p>
+    </div>
+  </div>
+</div>
+
+<div id="shushay" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="shushay.jpg" alt="Shushay Hailemariam">
+    <div class="popup-text">
+      <h3>Shushay Hailemariam</h3>
+      <p>Wise, handsome, and beloved by the whole family.</p>
+    </div>
+  </div>
+</div>
+<div id="novel" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="novel.jpg" alt="Novel Kiros">
+    <div class="popup-text">
+      <h3>Novel Kiros</h3>
+      <p>He is the first child of our eldest brother, marking the beginning of a new generation in our family..</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="tadelesh" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="tadelesh.jpg" alt="Tadelesh Abrha">
+    <div class="popup-text">
+      <h3>Tadelesh AbrhaS</h3>
+      <p>strong and beautiful mom...</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="tsega" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="tsega.jpg" alt="Tsega Hailemariam">
+    <div class="popup-text">
+      <h3>Tsega Hailemariam</h3>
+      <p>Strong and talented Computer Engineering graduate.</p>
+    </div>
+  </div>
+</div>
+
+<div id="girmay" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="girmay.jpg" alt="Girmay Hailemariam">
+    <div class="popup-text">
+      <h3>Girmay Hailemariam</h3>
+      <p>Water Engineering graduate and a good deacon.</p>
+    </div>
+  </div>
+</div>
+
+<div id="hiluf" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="hiluf.jpg" alt="Hiluf Hailemariam">
+    <div class="popup-text">
+      <h3>Hiluf Hailemariam</h3>
+      <p>Works at CBE Bank, reliable and family-oriented.</p>
+    </div>
+  </div>
+</div>
+
+<div id="atsede" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="atsede.jpg" alt="Atsede Hailemariam">
+    <div class="popup-text">
+      <h3>Atsede Hailemariam</h3>
+      <p>Strong and smart trader working in multiple businesses.</p>
+    </div>
+  </div>
+</div>
+
+<div id="gezaei" class="popup">
+  <div class="popup-content">
+    <a href="#">×</a>
+    <img src="gezaei.jpg" alt="Gezaei Hailemariam">
+    <div class="popup-text">
+      <h3>Gezaei Hailemariam</h3>
+      <p>Works in goat and sheep trading, caring and dependable.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
